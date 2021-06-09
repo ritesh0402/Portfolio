@@ -1,0 +1,29 @@
+.header {
+    position: absolute;
+    top: 0px; left: 0px;
+    height: 75px;
+    width: 100%;
+    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hs1 {
+    height: 50px;
+    width: 90%;
+    background-color: aqua;
+    display: flex;
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+    background-color: burlywood;
+}
+
+.nav {
+    height: 50px;
+    background-color: darkblue;
+
+}
