@@ -1,29 +1,63 @@
+*{
+    margin: 0px;
+}
+
 .header {
-    position: absolute;
-    top: 0px; left: 0px;
-    height: 75px;
+    position: fixed;
+    top: 0px;left: 0px;
+    height: 80px;
     width: 100%;
-    background-color: blueviolet;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .hs1 {
-    height: 50px;
-    width: 90%;
-    background-color: aqua;
+    height: 80px;
+    width: 100%;
+    background-color: blueviolet;
     display: flex;
 }
 
 .logo {
+    position: absolute; top: 50%; left: 15px;
+    margin-top: -25px;
+    display: inline;
     height: 50px;
     width: 50px;
     background-color: burlywood;
 }
 
 .nav {
-    height: 50px;
-    background-color: darkblue;
+    position: absolute; top: 50%; right: 15px;
+    margin-top: -25px;
+    display: flex;
+    align-items: center;
+    height: 50px; width: 400px;
+    background-color: rgb(255, 251, 2);
+}
 
+.nav > nav > ul > li {
+    display: inline;
+    background-color: white;
+    margin-left: 10px;
+}
+
+.nav > nav > ul > li > a {
+    text-decoration: none;
+    font-size: 26px;
+    height: 50px;
+}
+    
+
+    /* --------------------------------------------------------------------------------------------------------------------------------------------
+    ---------------------------------------------------------------------main------------------------------------------------------------------- */
+                    
+.main {
+    position: absolute; top: 80px;
+    height: 1000px; width: 100%;
+    background-color: brown;
+}
+
+#home {
+    position: absolute; top: 0px; left: 0px;
+    background-color: tomato;
+    height: 580px; width: 100%;
 }
