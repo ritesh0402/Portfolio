@@ -105,6 +105,11 @@
     font-size: 50px;
 }
 
+.introimg:hover {
+    height: 350px;
+    margin-left: 70px;
+}
+
 .introimg {
     margin-left: 170px;
     height: 300px;
@@ -184,6 +189,10 @@
     border-radius: 20px;
 }
 
+.card1:hover , .card2:hover {
+    background-color: rgb(226, 223, 223);
+}
+
 .card1 > img {
     position: relative; top: 50px;
     height: 250px; width: 330px;
@@ -215,6 +224,10 @@
 
 .cardh {
     font-size: 29px;
+}
+
+.caedp {
+    margin-left: 5px; margin-right: 5px;
 }
 
 #contact {
