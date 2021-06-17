@@ -182,6 +182,13 @@
     height: 450px; width: 100%;
 }
 
+.con{
+    position: absolute; left: 50%; top: 50%;
+    margin-left: -490px; margin-top: -200px;
+    height: 400px; width: 980px;
+    background-color: aqua;
+}
+
 .con > h1 {
     font-size: 36px;
 }
