@@ -72,22 +72,32 @@
 }
 
 .intro {
-    position: absolute; top: 230px; left: 270px;
+    position: absolute; top: 50%; left: 50%;
+    margin-left: -420px;
+    margin-top: -200px;
+    height: 400px; width: 840px;
+    display: flex;
+    align-items: center;
+    background-color: aqua;
 }
 
-.intro > h2 {
+.introtext {
+    height: 114px; width: 350px;
+}
+
+.introtext > h2 {
     font-size: 25px;
 }
 
-.intro > h1 {
+.introtext > h1 {
     font-size: 50px;
 }
 
 .introimg {
-    position: absolute; top: -110px; left: 480px;
+    margin-left: 170px;
     height: 300px;
     border-radius: 100%;
-    border: solid 15px black;
+    border: solid 10px black;
 }
 
 #about {
@@ -101,16 +111,22 @@
     height: 580px; width: 100%;
 }
 
+.abtcon {
+    position: absolute; left: 50%;
+    margin-left: -490px;
+    height: 580px; width: 980px;
+    display: flex;
+    align-items: center;
+    background-color: aqua;
+}
+
 .aboutimg {
-    position: absolute; top: 50%; left: 100px;
-    margin-top: -225px;
     height: 450px; width: 400px; 
     background-color: royalblue;
+    margin-left: 5px; margin-right: 70px;
 }
 
 .abouttext {
-    position: absolute; top: 50%; right: 150px;
-    margin-top: -150px;
     height: 300px; width: 500px;
     background-color: rosybrown;
 }
@@ -129,11 +145,19 @@
     height: 580px; width: 100%;
 }
 
+.procon {
+    position: absolute; left: 50%;
+    margin-left: -490px;
+    height: 580px; width: 980px;
+    background-color: aqua;
+}
+
 .card1 {
-    position: absolute; top: 50%; left: 100px;
-    margin-top: -240px;
+    position: absolute; top: 50%;
+    margin-top: -240px; margin-left: 15px; margin-right: 50px;
     height: 480px; width: 450px;
     background-color: peru;
+    text-align: center;
 }
 
 .card1 > img {
@@ -141,10 +165,11 @@
 }
 
 .card2 {
-    position: absolute; top: 50%; right: 100px;
+    position: absolute; top: 50%; left: 515px;
     margin-top: -240px;
     height: 480px; width: 450px;
     background-color: peru;
+    text-align: center;
 }
 
 .card2 > img {
@@ -155,6 +180,10 @@
     position: absolute; top: 1900px; left: 0px;
     background-color: seagreen;
     height: 450px; width: 100%;
+}
+
+.con > h1 {
+    font-size: 36px;
 }
 
 footer {
