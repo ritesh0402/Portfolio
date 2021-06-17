@@ -34,7 +34,7 @@
 }
 
 .nav {
-    position: absolute; top: 50%; right: 30px;
+    position: absolute; top: 50%; right: 50px;
     margin-top: -25px;
     display: flex;
     align-items: center;
@@ -44,7 +44,7 @@
 }
 
 .nav > nav > ul{
-    width: 360px;
+    width: 380px;
     margin: 0px;
     padding: 0px;
 }
@@ -60,7 +60,16 @@
     font-size: 20px;
     height: 50px;
     background-color: transparent;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.nav > nav > ul > li > a :hover {
     color: white;
+    transition: 0.3s;
+}
+
+a {
+    text-decoration: none;
 }
     
 
@@ -94,7 +103,11 @@
 
 .introtext {
     height: 114px; width: 350px;
-    color: white;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.introtext:hover {
+    color: rgba(255, 255, 255, 0.85);
 }
 
 .introtext > h2 {
@@ -108,13 +121,14 @@
 .introimg:hover {
     height: 350px;
     margin-left: 70px;
+    transition: 0.4s;
 }
 
 .introimg {
     margin-left: 170px;
     height: 300px;
     border-radius: 100%;
-    border: solid 10px white;
+    border: solid 10px rgba(255, 255, 255, 0.8);
 }
 
 #about {
@@ -254,7 +268,12 @@
 .con > address {
     position: absolute; left: 80px; top: 110px;
     font-size: 18px;
+    font-weight: 500;
 } 
+
+.con > address > a:hover {
+    font-weight: 900;
+}
 
 .sm {
     position: absolute; top: 300px; left: 80px;
@@ -271,6 +290,7 @@
     text-align: center;
     text-decoration: none;
     margin: 5px 2px;
+    border-radius: 5px;
   }
   
   .fa:hover {
