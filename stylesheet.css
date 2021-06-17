@@ -69,7 +69,7 @@
                     
 .main {
     position: absolute; top: 80px;
-    height: 2477px; width: 100%;
+    height: 2430px; width: 100%;
     background-color: brown;
 }
 
@@ -220,7 +220,7 @@
 #contact {
     position: absolute; top: 1900px; left: 0px;
     background-color: transparent;
-    background-image: url(/img/balidan.jpg);
+    background-image: url(/img/mountain.jpg);
     background-repeat: no-repeat;
     background-size: 100% 450px;
     height: 450px; width: 100%;
@@ -289,13 +289,14 @@
 
 footer {
     position: absolute; top: 2430px; left: 0px;
-    height: 127px; width: 100%;
+    height: 80px; width: 100%;
     background-color: rgb(14, 14, 14);
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     color: whitesmoke;
+    font-size: 12px;
 }
 
 footer > p {
