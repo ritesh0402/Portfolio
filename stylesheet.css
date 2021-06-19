@@ -460,6 +460,10 @@ footer > p {
         animation-name: none;
     }
 
+    .introimg {
+        transition: none;
+    }
+
     .con > address {
         position: absolute; left: 40px; top: 110px;
         font-size: 16px;
