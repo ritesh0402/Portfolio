@@ -163,7 +163,7 @@ a {
 .abouttext {
     height: 300px; width: 490px;
     background-color: rgba(0, 0, 0, 0.55);
-    font-size: 14px;
+    font-size: 24px;
     color: white;
     padding: 20px 12px 50px 30px;
     border-radius: 30px;
@@ -442,8 +442,6 @@ footer > p {
     }
     .loader > h1 {
         position: absolute; top: 0px; left: 1%;
-        font-size: 30px;
-        height: 35px; width: 250px;
         animation-name: none;
     }
     .loader {
@@ -474,11 +472,22 @@ footer > p {
     .abtcon {
         width: 100%;
     }
-}
-
-@media only screen and (max-width: 480px){
+    
     .nav {
         display: none;
+    }
+}
+
+@media only screen and (max-width: 510px){
+
+    .introimg {
+        height: 250px;
+        width: 250px;
+        margin-left: -125px;
+    }
+
+    .introtext {
+        width: 310px;
     }
 
     .introtext > h1 {
@@ -499,7 +508,7 @@ footer > p {
         position: absolute; left: 50%;
         margin-left: -40%;
         width: 80%;
-        font-size: 17px;
+        font-size: 18px;
     }
 
     .abtcon, .abt {
@@ -524,6 +533,7 @@ footer > p {
     }
 
     .card > p {
+        position: absolute; left: 5%;
         font-size: 10px;
     }
     
@@ -540,6 +550,19 @@ footer > p {
     .card2 > img {
         width: 90%;
     }
+
+    .loader > h1 {
+        font-size: 30px;
+        height: 35px; width: 270px;
+    }
+
+    @media only screen and (max-width: 420px) {
+        .loader {
+            position: absolute;
+            left: 40px;
+        }
+    }
+
 }
 
 
@@ -547,7 +570,7 @@ footer > p {
 
 .loader{
     position: absolute; top: 45px; left: 60px;
-    width: 280px;
+    width: 270px;
     height: 48px;
     animation: typing 10s steps(15) infinite;
     overflow: hidden;
@@ -576,7 +599,7 @@ footer > p {
     height: 48px;
     letter-spacing: 2px;
     position: relative;
-    font-size: 40px;
+    font-size: 37px;
 }
 
 @keyframes typing {
@@ -584,7 +607,7 @@ footer > p {
         width: 0px;
     }
     30%, 60% {
-        width: 280px;
+        width: 270px;
     }
 }
 
