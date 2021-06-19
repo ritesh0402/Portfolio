@@ -21,16 +21,16 @@
 }
 
 .logo {
-    position: absolute; top: 50%; left: 30px;
-    margin-top: -25px;
+    position: absolute; left: 30px;
+    /* margin-top: -25px; */
     display: inline;
-    height: 50px;
-    width: 50px;
+    height: 80px;
+    width: 90px;
 }
 
 #logo {
-    height: 60px;
-    width: 80px;
+    height: 80px;
+    width: 90px;
 }
 
 .nav {
@@ -41,6 +41,15 @@
     height: 50px; width: 360px;
     background-color: transparent;
     margin-right: auto; margin-left: auto;
+}
+
+.burger {
+    display: none;
+}
+
+
+.visibilty {
+    opacity: 0;
 }
 
 .nav > nav > ul{
@@ -70,6 +79,7 @@
 
 a {
     text-decoration: none;
+    cursor: pointer;
 }
     
 
@@ -201,6 +211,7 @@ a {
     background-color: rgba(34, 34, 34, 0.3);
     text-align: center;
     border-radius: 20px;
+    cursor: pointer;
 }
 
 /* .card1:hover , .card2:hover {
@@ -228,6 +239,7 @@ a {
     background-color: rgba(34, 34, 34, 0.3);
     text-align: center;
     border-radius: 20px;
+    cursor: pointer;
 }
 
 .card2 > img {
@@ -475,6 +487,84 @@ footer > p {
     
     .nav {
         display: none;
+    }
+.header {
+    overflow: visible;
+    }
+
+    .hs1 {
+        overflow: visible;
+    }
+    
+    .burger {
+        display: flex;
+        height: 45px; width: 60px;
+        flex-direction: column;
+        position: absolute; top: 18px; right: 25px; 
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+        border-radius: 7px;
+    }
+
+    .burger :hover {
+        background-color: rgb(173, 171, 171);
+    }
+
+    .line {
+        width: 32px; height: 4px;
+        margin: 3px 3px;
+        background-color: rgb(245, 245, 245);
+
+    }
+
+    .hamnav {
+        position: absolute; right: 25px;
+        display: flex;
+        align-items: center;
+        overflow: visible;
+    }
+
+    .hamnav > nav > ul{
+        position: absolute;top: 22px; right: 40%;
+        width: 200px;
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        height: 220px;
+        align-items: center;
+        border-radius: 20px;
+        background-color: rgba(255, 255, 255, 0.363);
+    }
+    
+    .hamnav > nav > ul > li {
+        margin-left: 0px;
+        background-color: transparent;
+        width: 160px;
+        line-height: 40px;
+        list-style: none;
+        margin-top: 10px;
+        text-align: center;
+        border-radius: 10px;
+    }
+
+    .hamnav > nav > ul > li:hover {
+        background-color: rgba(206, 206, 206, 0.712);
+    }
+    
+    .hamnav > nav > ul > li > a {
+        width: fit-content;
+        text-decoration: none;
+        font-size: 20px;
+        height: 50px;
+        background-color: transparent;
+        color: rgba(255, 255, 255, 0.75);
+    }
+    
+    .hamnav > nav > ul > li > a :hover {
+        color: white;
+        transition: 0.3s;
     }
 }
 
