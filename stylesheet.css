@@ -48,8 +48,8 @@
 }
 
 
-.visibilty {
-    opacity: 0;
+.visible {
+    display: none;
 }
 
 .nav > nav > ul{
@@ -530,7 +530,7 @@ footer > p {
     }
 
     .hamnav {
-        position: absolute; right: 25px;
+        position: absolute; right: 25px; right: 90px;
         display: flex;
         align-items: center;
         overflow: visible;
@@ -546,7 +546,7 @@ footer > p {
         height: 220px;
         align-items: center;
         border-radius: 20px;
-        background-color: rgba(255, 255, 255, 0.363);
+        background-color: rgba(255, 255, 255, 0.459);
     }
     
     .hamnav > nav > ul > li {
@@ -570,18 +570,29 @@ footer > p {
         font-size: 20px;
         height: 50px;
         background-color: transparent;
-        color: rgba(255, 255, 255, 0.75);
+        color: rgba(0, 0, 0, 0.76);
+        font-weight: 800;
     }
     
     .hamnav > nav > ul > li > a :hover {
         color: white;
         transition: 0.3s;
     }
+
+    .visible {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 510px){
 
     .introimg {
+        height: 250px;
+        width: 250px;
+        margin-left: -125px;
+    }
+
+    .introimg:hover {
         height: 250px;
         width: 250px;
         margin-left: -125px;

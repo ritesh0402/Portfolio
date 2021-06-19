@@ -3,5 +3,7 @@ hamnav = document.querySelector(".hamnav")
 
 
 burger.addEventListener("click", ()=>{
-    hamnav.classList.toggle('visibilty');
+    hamnav.classList.toggle('visible');
+    // burger.classList.toggle('visible');
 })
+
