@@ -198,15 +198,15 @@ a {
     position: absolute; top: 50%;
     margin-top: -240px; margin-left: 15px; margin-right: 50px;
     height: 480px; width: 450px;
-    background-color: rgba(245, 245, 245, 0.4);
+    background-color: rgba(34, 34, 34, 0.3);
     text-align: center;
     border-radius: 20px;
 }
 
-.card1:hover , .card2:hover {
+/* .card1:hover , .card2:hover {
     background-color: rgba(245, 245, 245, 0.93);
     transition: 0.4s;
-}
+} */
 
 .card1 > img {
     position: relative; top: 50px;
@@ -217,7 +217,7 @@ a {
 .cardtext {
     position: relative; top: 90px;
     font-size: 20px;
-    color: black;
+    color: white;
     font-weight: 600;
 }
 
@@ -225,7 +225,7 @@ a {
     position: absolute; top: 50%; left: 515px;
     margin-top: -240px;
     height: 480px; width: 450px;
-    background-color: rgba(245, 245, 245, 0.4);
+    background-color: rgba(34, 34, 34, 0.3);
     text-align: center;
     border-radius: 20px;
 }
@@ -262,10 +262,7 @@ a {
     background-color: whitesmoke;
 }
 
-.con > h1 {
-    position: absolute; top: 40px; left: 60px;
-    font-size: 40px;
-}
+
 .con > address {
     position: absolute; left: 80px; top: 110px;
     font-size: 18px;
@@ -443,7 +440,7 @@ footer > p {
         margin-left: -200px;
         width: 400px;
     }
-    .con > h1 {
+    .loader > h1 {
         position: absolute; top: 40px; left: 30px;
         font-size: 40px;
     }
@@ -485,4 +482,78 @@ footer > p {
         width: 400px;
     }
 
+}
+
+
+/* ---------------------------------ANIMATION---------------------------------------------------------------------------- */
+
+.loader{
+    position: absolute; top: 45px; left: 60px;
+    width: 280px;
+    height: 48px;
+    animation: typing 10s steps(15) infinite;
+    overflow: hidden;
+}
+.loader::before {
+    content: '';
+    position: absolute;
+    bottom: 6px;
+    right: 0px;
+    width: 2px;
+    height: 40px;
+    background-color: black;
+    animation: blinkCursor 0.6s steps(3) infinite ;
+}
+
+@keyframes blinkCursor {
+    0%, 75% {
+        opacity: 1;
+    }
+    76%, 100% {
+        opacity: 0;
+    }
+}
+
+.loader > h1 {
+    height: 48px;
+    letter-spacing: 2px;
+    position: relative;
+    font-size: 40px;
+}
+
+@keyframes typing {
+    0%, 90% ,100% {
+        width: 0px;
+    }
+    30%, 60% {
+        width: 280px;
+    }
+}
+
+/* -------------------2--------------------------------------------------------------------------------------- */
+
+
+.square {
+    position: absolute; top: 0; left: 0;
+    height: 100%; width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.square::before {
+    content: '';
+    position: absolute; top: 0; left: 0;
+    height: 100%; width: 100%;
+    border-radius: 20px;
+    background-color: rgba(34, 34, 34, 0.7);
+    clip-path: circle(10px at center);
+    transition: 1s;
+}
+
+.square:hover:before{
+    clip-path: circle(800px at center);
+}
+
+.card {
+    transition: 1s;
 }
