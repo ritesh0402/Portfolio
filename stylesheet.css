@@ -373,6 +373,12 @@ footer > p {
         margin-left: -150px;
     }
 
+    .introimg:hover {
+        position: absolute; top: 50px; left: 50%;
+        margin-left: -150px;
+        height: 300px;
+    }
+
     .introtext {
         position: absolute; top: 430px; left: 50%;
         margin-left: -150px;
@@ -445,6 +451,7 @@ footer > p {
         margin-left: -300px;
         width: 600px;
     }
+
 }
 
 @media only screen and (max-width: 620px) {
@@ -492,7 +499,7 @@ footer > p {
     .nav {
         display: none;
     }
-.header {
+    .header {
     overflow: visible;
     }
 
