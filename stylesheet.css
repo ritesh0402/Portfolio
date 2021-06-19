@@ -441,8 +441,13 @@ footer > p {
         width: 400px;
     }
     .loader > h1 {
-        position: absolute; top: 40px; left: 30px;
-        font-size: 40px;
+        position: absolute; top: 0px; left: 1%;
+        font-size: 30px;
+        height: 35px; width: 250px;
+        animation-name: none;
+    }
+    .loader {
+        animation-name: none;
     }
 
     .con > address {
@@ -476,12 +481,65 @@ footer > p {
         display: none;
     }
 
-    .abouttext {
-        position: absolute; left: 50%;
-        margin-left: -185px;
-        width: 400px;
+    .introtext > h1 {
+        width: 310px;
+        margin: 0px;
     }
 
+    .introtext > h2 {
+        width: 310px;
+        margin: 0px;
+    }
+    
+    .abouttext > h1 {
+        margin-bottom: 10px;
+    }
+
+    .abouttext > p {
+        position: absolute; left: 50%;
+        margin-left: -40%;
+        width: 80%;
+        font-size: 17px;
+    }
+
+    .abtcon, .abt {
+        position: absolute; left: 0px;
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    .abouttext {
+        position: absolute; left: 6%;
+        margin-left: 0px;
+        width: 80%;
+    }
+
+    .card {
+        position: absolute; left: 50%;
+        margin-left: -45%;
+        width: 90%;
+    }
+    .card > h1 {
+        font-size: 30px;
+    }
+
+    .card > p {
+        font-size: 10px;
+    }
+    
+    .con {
+        position: absolute; left: 5%;
+        margin-left: 0px;
+        width: 90%;
+    }
+
+    .card1 > img {
+        width: 90%;
+    }
+
+    .card2 > img {
+        width: 90%;
+    }
 }
 
 
