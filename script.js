@@ -1,5 +1,3 @@
-alert("Hello! I am an alert box!!");
-
 burger = document.querySelector(".burger")
 hamnav = document.querySelector(".hamnav")
 
